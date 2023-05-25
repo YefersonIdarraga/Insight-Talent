@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  --blue: #395976;
+  --purple: #846a9e;
+  --sky-blue: #a2b0b8;
+  --gray: #5e5f5d;
+}
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000003e;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--sky-blue);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.modal h2{
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.modal form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.info{
+    width: 80%;
+    width: 280px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--blue);
+    color: white;
+}
+
+.info::placeholder{
+    color: white;
+}
+
+.modal form textarea{
+    height: 150px;
+    resize: none;
+}
+
+.addImage{
+    display: none;
+}
+
+.modal-upload label, .modal-buttons button{
+    cursor: pointer;
+    background-color: var(--purple);
+    color: white;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-buttons{
+    display: flex;
+    gap: 10px;
+}
